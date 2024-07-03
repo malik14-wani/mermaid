@@ -1,0 +1,52 @@
+graph LR
+    A[Challenges in HSE Logistic Sdn. Bhd.]
+    
+    subgraph Operational
+        direction LR
+        B1[Operational]
+        B1 --> C1[COVID-19 Impact]
+        B1 --> C2[Driver Behavior]
+        B1 --> C3[Route Delays]
+        C1 --> D1[Revenue Decline]
+        C1 --> D2[Increased Costs]
+        C1 --> D3[Transport Interruption]
+        C2 --> D4[Driver Shortage]
+        C2 --> D5[Delivery Delays]
+        C2 --> D6[Customer Dissatisfaction]
+        C3 --> D7[Border Crossing Delays]
+        C3 --> D8[Health Inspections]
+        C3 --> D9[Paperwork and Quarantine]
+    end
+
+    subgraph Security
+        direction LR
+        B2[Security]
+        B2 --> C4[Recent Accident]
+        B2 --> C5[Vehicle Maintenance]
+        B2 --> C6[Driver Training]
+        C4 --> D10[Cash Loss]
+        C4 --> D11[Fleet Safety]
+    end
+
+    subgraph Financial
+        direction LR
+        B3[Financial]
+        B3 --> C7[Competitive Market]
+        B3 --> C8[Insurance Costs]
+        B3 --> C9[Racial Hierarchies]
+        C7 --> D12[Low Profit]
+        C7 --> D13[Operational Costs]
+    end
+
+    subgraph Regulatory
+        direction LR
+        B4[Regulatory]
+        B4 --> C10[Regulatory Compliance]
+        C10 --> D14[Adherence Costs]
+        C10 --> D15[Operational Constraints]
+    end
+
+    A --- B1
+    A --- B2
+    A --- B3
+    A --- B4
